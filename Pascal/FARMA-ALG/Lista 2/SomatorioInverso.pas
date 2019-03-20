@@ -2,7 +2,7 @@
 program SomatorioInverso;
 
 var 
-  soma, anterior : Real;
+  soma: Real;
   n, i: Integer;
 
 begin
