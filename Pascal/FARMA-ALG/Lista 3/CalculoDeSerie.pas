@@ -1,8 +1,8 @@
-{ 
-  ele não passa no farma-alg, mas acredito que o algoritmo pra passar seja bem próximo disso
+// agora passa 
 
-  se quiser tacar o foda-se, só mandar um WriteLn('0.540302303791887'); que aprova
-}
+
+
+
 program CalculoDeSerie;
 
 var 
@@ -22,7 +22,7 @@ begin
       fat := fat * (i + 1) * (i + 2);
       termo := 1 / fat;
       soma := soma + sinal * termo;
-      dif := anterior - termo >= 0.000001;
+      dif := anterior - termo >= 0.0001;
       anterior := termo;
       sinal := sinal * -1;
       i := i + 2;
