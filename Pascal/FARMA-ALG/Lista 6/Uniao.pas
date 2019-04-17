@@ -36,7 +36,7 @@ begin
           i := i + 1;
         end;
     end;
-    tamanhoA := i - 1;
-    for i := 1 to tamanhoA do
-      write(A[i], ' ');
+  tamanhoA := i - 1;
+  for i := 1 to tamanhoA do
+    write(A[i], ' ');
 end.
