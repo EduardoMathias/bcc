@@ -5,14 +5,14 @@ type
 var
   original, compacta: matriz;
   i, j, size, size_m: longint;
-
-procedure reduz(var compacta: matriz; original: matriz; size: longint);
+{ ligar pra escopo pra que, né? }
+procedure reduz();
 var
   size_c, k: longint;
   presente: boolean;
 begin
   size_c := 0;
-  for i := 1 to size do
+  for i := 1 to size_m do
   begin
     for j := 1 to original[i][0] do
     begin
@@ -43,7 +43,7 @@ begin
     read(size);
   end;
   size_m := i;
-  reduz(compacta, original, size_m);
+  reduz();
   for i := 1 to size_m do
   begin
     write('O: ');
