@@ -8,8 +8,7 @@ function SomaSubSequencia (sequencia : vetor; indice : LongInt; alcance : LongIn
 var soma, i : LongInt;
 begin
   soma := 0;
-  indice := indice + alcance;
-  for i := indice - alcance to indice + alcance do
+  for i := indice to indice + alcance do
     soma := soma + sequencia[i];
   if soma + sequencia[i + 1] > soma then
     soma := soma + sequencia[i + 1];
@@ -22,7 +21,7 @@ begin
   for i := 1 to tam do
     read(sequencia[i]);
   alcance := 0;
-  while alcance * 2 + 1 < tam do
+  while alcance + 1 < tam do
   begin
     for i := 1 to tam - alcance do
     begin
@@ -30,7 +29,7 @@ begin
       if atual > maxima then
         maxima := atual;
     end;
-    alcance := alcance + 1;
+    alcance := alcance + 2;
   end;
   WriteLn(maxima);
 end.
