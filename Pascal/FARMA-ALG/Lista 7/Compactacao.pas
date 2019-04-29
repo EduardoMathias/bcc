@@ -2,10 +2,11 @@ program Compactacao;
 
 type
   matriz = array [1..100, 0..100] of longint;
+  
 var
   original, compacta: matriz;
   i, j, size, size_m: longint;
-{ ligar pra escopo pra que, né? }
+
 procedure reduz();
 var
   size_c, k: longint;
