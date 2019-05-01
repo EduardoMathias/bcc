@@ -18,6 +18,7 @@ begin
     for i := 1 to n do
     read(v[i]);
 end;
+
 function tem_subsequencia_iguais (v: vetor; n, tam_seg: longint): longint;
 (*
 recebe uma subsequencia "v" que em tamanho "n" e procura por subsequencias
@@ -52,7 +53,6 @@ begin
         tem_subsequencia_iguais := i
     else
         tem_subsequencia_iguais := 0;
-
 end;
 
 (* programa principal *)
