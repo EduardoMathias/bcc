@@ -1,4 +1,4 @@
-
+program divide;
 
 const MAX = 100;
 
